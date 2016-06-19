@@ -8,7 +8,7 @@ This regex if fairly good to find offensive comments if they contain swear words
 
 The dump should contain  what was nuked by mods and had atleast one rude/offensive flag. There is no need to included the user who posted the comment, but their reputation could be interesting.
 
-I know other people also are interested in this dump.
+I know other users also are interested in this dump.
 
 http://chat.stackoverflow.com/transcript/message/31044541#31044541
 
