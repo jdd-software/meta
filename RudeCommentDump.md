@@ -1,21 +1,9 @@
 #Can I have a dump of rude/abusive comments?
 
-We have [bot](http://stackapps.com/questions/6910) that currently is elaborating **all** comments on SO to find possibile duplicates and notify hammers in tag.
+We already know [it is possible](http://meta.stackoverflow.com/questions/280546/can-a-machine-be-taught-to-flag-comments-automatically) for a machine to be taught to flag comments automatically. This incredible post used machine learning techniques with an initial training on known good and flaggable comments in order to classify any comments.
 
-While elaborating the comments, I also for testing reasons started to try to find the rude/offensive comments (hence I'm already parsing them all so why not). Currently it is implementing [SmokeDetector](https://github.com/Charcoal-SE/SmokeDetector) regex with only minor changes.
+[One of the answers](http://meta.stackoverflow.com/a/280554/1743880) of that post mentioned that it would be even more useful to identify rude / offensive comments automatically with a very high success rate. This is what I intend to try and start.
 
-This regex if fairly good to find comments if they contain swear words, however I would like to explore the possibilities to find rude/offensive comments that do not contain these words (regex/machine learning etc)
+To do that, I started to use a basic identification technique with a regular expression. This generates too much false positives, and, like the linked post, a machine learning algorithm is needed. However, this means I need a lot of rude / offensive comments to train a classifier. I can look at my comment flag history and filter (with the help of a user script, since it isn't possible directly with the UI) those that I flagged as rude, but there aren't that many.
 
-The dump should contain what was nuked by mods and had atleast one rude/offensive flag. There is no need to included the user who posted the comment, but their reputation could be interesting.
-
-I know other users that are also  interested in a similar dump.
-
-http://chat.stackoverflow.com/transcript/message/31044541#31044541
-
-
-
-
-
-
-
-
+Bottom-line: I want lots (> 3000) of rude comments. The dump should contain comments deleted by a moderator that has at least one rude/offensive flag.
