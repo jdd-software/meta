@@ -1,6 +1,6 @@
 #Can I have a dump of rude/abusive comments?
 
-We have [bot](http://stackapps.com/questions/6910) that currently is elaborating all comments on SO to find and present possibile duplicates to hammers in tag.
+We have [bot](http://stackapps.com/questions/6910) that currently is elaborating **all** comments on SO to find possibile duplicates and notify hammers in tag.
 
 While elaborating all comments, I also for testing reasons started to try to find the rude/offensive comments (hence I'm already parsing them all so why not). Currently it is implementing [SmokeDetector](https://github.com/Charcoal-SE/SmokeDetector) regex with only minor changes.
 
